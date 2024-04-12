@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{   margin: 0;  padding: 0; font-family: "Nunito Sans", sans-serif; } 
+h1{  font-weight: 700; font-size: 24px; text-align: center;} 
+h2{  font-weight: 500; font-size: 20px; color: white;} 
+h3{ font-weight: 500; font-size: 16px; }
+.badge{  font-weight: 600;  font-size: 12px; }
+p{  font-weight: 400; font-size: 14px; line-height: 1.6; }
+header{ display: flex; justify-content: center; }
+section{
+    display: flex;
+    justify-content: center;
+    height:auto;
+}
+.affichage{
+display: flex;
+flex-direction: column;
+width: 480px;   height: 550px;
+background-color: #CDCDF1;   border: 3px solid #504DC1;
+}
+.barre{
+    display: flex;
+    align-items: center;  justify-content: space-between;
+    background-color: #504DC1;
+    height: 45px;
+    margin-bottom: 30px;
+}
+
+.barre h2 {
+    flex-grow: 1; /* Pour agrandir le conteneur flex */
+    text-align: start; /* Pour poser le texte au debut */
+    transform: translateX(50%);}
+
+.btn-exit{
+    display: flex; justify-content: center; align-items: center;
+    background-color: #CE0033;
+    color: white; cursor: pointer;
+    border: none;  height: 45px; width: 45px;
+}
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+background-color: #CDCDF1;
+        }
+        form div{
+        width:320px;
+        margin: 15px auto;
+        }
+form input{
+    width: 200px; height: 25px;
+    background-color: #504DC1;  border: none;
+    color: white; font-weight: 400; font-size: 14px; 
+     padding: 2.5px; 
+}
+ .div-inline select{
+  width: 205px;/* Pour avoir la meme largeur de form input 5px de plus qui est due au padding */
+   height: 30px; /* Pour avoir la meme hauteur de form input 5px de plus qui est due au padding */
+  background-color: #504DC1;  border: none;
+  color: white; font-weight: 400; font-size: 14px; 
+   padding: 2.5px; 
+}
+        form textarea{
+            width: 200px; height: 100px;
+            background-color: #504DC1; border: none;
+            color: white;  font-weight: 400; font-size: 14px; line-height: 1.2; 
+             padding: 2.5px; 
+        }
+        .div-inline{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } 
+     
+        .div-inline label{ font-weight: 500; font-size: 16px; }
+        .div-inline-ex{
+            display: flex;
+            justify-content: space-between;
+        } 
+
+ .btn-txt{ font-weight: 600;
+            font-size: 16px;
+            width: 205px; /* On ajoute 5px à cause du padding pour textarea et input pour rester dans la symetrie */
+                height: 40px;
+                color: #fff;
+                background: #CE0033;
+                border: none;
+                cursor: pointer; }
+.btn-flex{
+ display: flex;
+ justify-content: end;}
+
+ footer{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin-top: 100px;
+    background-color: #504DC1;
+    height: 40px;
+    color: white;
+    font-weight: 600;  font-size: 12px;
+ }
+
+ @media only screen and (max-width: 500px) {
+    /* Ajoutez vos styles CSS spécifiques pour les écrans de 375x675 ici */
+   
+  header img {
+    height: 180px;
+  }
+    .barre{ height: 30px; margin-bottom: 20px; }
+    .barre h2 {font-size: 16px;}
+
+  .btn-exit{ height: 30px; width: 30px;  }
+  .btn-exit img{ height: 30; width: 30px; }
+  .div-inline label, .div-inline-ex label{  font-size: 12px; }
+  form input,form textarea,#bootcamp,#formateur{
+    font-size: 10px;
+  }
+ 
+form div{
+    width:280px;
+    margin: 8px auto;
+    }
+.affichage{
+    width: 350px;   height: 100%;
+}
+  
+.btn-txt{ 
+    font-size: 12px;
+        height: 30px;
+        margin-bottom: 20px;
+       }
+    
+    footer{
+     
+      padding: 20px;
+      margin-top: 70px;
+      height: 20px;
+      font-size: 8px;
+    }
+  
+  }
+  
+

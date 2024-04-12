@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{   margin: 0;  padding: 0; font-family: "Nunito Sans", sans-serif; } 
+h1{  font-weight: 700; font-size: 24px; } 
+h2{  font-weight: 500; font-size: 20px;} 
+h3{ font-weight: 500; font-size: 16px; }
+.badge{  font-weight: 600;  font-size: 12px; }
+p{  font-weight: 400; font-size: 14px; line-height: 1.6; }
+header{ display: flex; justify-content: center; }
+body{
+  overflow-x: hidden;
+}
+.section{
+display: flex; justify-content: center;
+}
+.affichage{
+display: flex; 
+flex-direction: column; width: 65%;
+  height: 630px;
+background-color: #CDCDF1;   border: 3px solid #504DC1;
+}
+.barre{
+    display: flex;
+    align-items: center;  justify-content: space-between;
+    background-color: #504DC1;
+    height: 45px; margin-bottom: 40px;
+}
+
+#id-h2 {   color: white; font-weight: 500; font-size: 20px;
+    flex-grow: 1; /* Pour agrandir le conteneur flex */
+    text-align: start; /* Pour poser le texte au debut */
+    transform: translateX(41%);}
+
+.btn-exit{
+    display: flex; justify-content: center; align-items: center;
+    background-color: #CE0033;
+    color: white; cursor: pointer;
+    border: none;  height: 45px; width: 45px;
+}
+.container-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 80%;
+  }
+   #container1 h1 {
+margin: 20px 0;
+  }
+#container2 {
+    width: 80%;
+    height:200px;
+    margin: 20px auto;
+  }
+  
+  #tableau {
+    width: 100%;
+    border-collapse: collapse; /*Fusionner les borders en un seul pour creer un aspect compact */
+  }
+  #tableau-container {
+    max-height: 310px; /* Hauteur maximale pour le conteneur */
+    overflow-y: auto; /* Défilement vertical automatique si nécessaire */
+  }
+  th, td {
+    border-bottom: 1px solid #504DC1;
+    text-align: center;
+    padding: 8px;
+    width: 20%; font-weight: 500; font-size: 16px;
+}
+th{
+    background-color: #b6b4f5;
+}
+ 
+  
+  
+  /* ----------------------------------------------------- Affichage Interface ------------------------------------------*/
+
+  .display{  display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;    width: 40%;
+     transform: translate(-50%, -50%);  height:400px;
+  }
+  .nouveau-div {
+height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #CDCDF1;
+    border: 3px solid #504DC1;
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+}
+.center-div{
+  display: flex;
+  justify-content: center;  height: 100%; 
+}
+.contenu {
+    display: flex; margin-top: 10px;
+    flex-direction: column;
+    align-items: start; width: 50%;  height: 100%;
+}
+
+.containerBig{
+  padding: 5px;
+  background-color: #504DC1;  color: white; height:190px ;width: 100%; overflow-y: auto;
+}
+.contenu p {
+    margin-bottom: 10px; /* Ajustez la marge entre les paragraphes */
+}
+
+.containerBig p {
+  word-wrap: break-word; /* Forcer les mots à se casser */
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  margin-top: 100px;
+  background-color: #504DC1;
+  height: 40px;
+  color: white;
+  font-weight: 600;  font-size: 12px;
+}
+/********************************************************* Modal ********************************************************/
+#id2-h2 {   color: white; font-weight: 500; font-size: 20px;
+  flex-grow: 1; /* Pour agrandir le conteneur flex */
+  text-align: start; /* Pour poser le texte au debut */
+  transform: translateX(48%);}
+
+
+  .display-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;    width: 40%;
+     transform: translate(-50%, -50%);  display: none;
+  }
+
+
+.afficher-modal{
+  margin-left: 50px;
+  width: 100%; background-color: #CDCDF1;
+  border: 3px solid #504DC1;
+  height: auto;
+  padding-bottom: 40px;
+
+}
+.containerP-form-modal{
+  background-color:  #CDCDF1;
+  display: flex; justify-content: center;
+}
+
+.card-radio-text label {
+margin-left: 5px;    font-weight: 400; font-size: 14px;
+}
+
+
+.container-textarea{
+  margin-top: 4px; margin-bottom: 10px;
+  display: flex;
+  justify-content: end;
+}
+.container-textarea textarea{
+margin-left: 23px; padding: 3px; display: none;
+width: 100%;
+  background-color: #504DC1;
+  color: white;
+  font-weight: 400; font-size: 14px;
+}
+.submit-modal{
+  width: 100%; margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+.container-btn-sub{
+width: 270.5px;
+display: flex;
+justify-content: center;
+}
+
+.submit-modal button{
+  background-color: #CE0033;
+  color: white;
+  font-size: 16;
+  font-weight: 700;
+  width: 200px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+
+/* ************************************ Blur ******************************************** */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+  backdrop-filter: blur(5px); /* Ajout du flou */
+  z-index: 0; /* Assure que cet élément est au-dessus de tous les autres contenus */
+  display: none;
+}
+
+.modal_class,.view{
+  cursor: pointer;
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  /* Ajoutez vos styles CSS spécifiques pour les écrans de 375x675 ici */
+ 
+header img {
+  height: 180px;
+}
+
+  
+#id-h2 { font-size: 14px; }
+
+  .barre{ height: 30px; margin-bottom: 30px; }
+
+.btn-exit{ height: 30px; width: 30px;  }
+.btn-exit img{ height: 30; width: 30px; }
+
+#container1 h1 {
+  margin: 10px 0; font-size: 13px;
+    }
+    #container1 h2 {
+    font-size: 13px;
+        }
+
+        th { font-size: 10px;
+      }
+      td{ font-size: 8px; }
+td img {
+  height: 10px; width: 15px;
+}
+
+.affichage{
+  display: flex; 
+  flex-direction: column; width: 90%;
+    height: 400px;
+  }
+
+  footer{
+   
+    padding: 20px;
+    margin-top: 70px;
+    height: 20px;
+    font-size: 8px;
+  }
+
+  .display-modal{
+      width: 80%;
+
+}
+
+.afficher-modal{
+  margin-left: 0;
+  width: auto;
+
+}
+.card-radio-text label{
+  font-size: 12px;
+}
+
+.container-textarea textarea{
+  font-size: 12px;
+}
+.container-btn-sub button{
+  font-size: 12px;
+}
+
+.display{  
+      width: 80%;
+}
+.nouveau-div {
+      width: auto;
+      height: 90%; /* Ajustez la largeur selon vos besoins */
+  }
+  .center-div{
+    height: 80%; 
+ }
+  .contenu {
+     height: auto;
+    
+}
+.contenu p{
+  font-size: 12px;
+}
+.containerBig p {
+  font-size: 12px;
+}
+
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{   margin: 0;  padding: 0; font-family: "Nunito Sans", sans-serif; } 
+h1{  font-weight: 700; font-size: 24px; text-align: center;} 
+h2{  font-weight: 500; font-size: 20px; } 
+h3{ font-weight: 500; font-size: 16px; }
+.badge{  font-weight: 600;  font-size: 12px; }
+p{  font-weight: 400; font-size: 14px; line-height: 1.6; }
+header{ display: flex; justify-content: center; }
+
+.btn-txt{ font-weight: 600;
+        font-size: 16px;
+        width: 100%; /* A revoir après */
+        height: 40px;
+        color: #fff;
+        background: #504DC1;
+        border: none;
+        cursor: pointer; }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-box,.form-box-register{
+        background-color: #CDCDF1;
+        width: 450px;
+        height: 400px;
+        border: 3px solid #504DC1;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .form-box-register{
+        height: 450px;
+    }
+
+    .inputbox{
+        position: relative;
+        margin: 30px 0px; /*Pour creer margin de 30px en haut et en bas*/
+        width: 310px;
+        border-bottom: 3px solid #504DC1; /*Pour creer border au dessous de l'input*/
+        display: flex; align-items: center;
+    }
+
+    .inputbox input {
+        background-color: #CDCDF1;
+        width: 270px;
+        height: 50px;
+        border: none;
+        outline: none;
+        font-weight: 400; font-size: 14px;
+        padding:0 35px 0 5px;
+    }
+    .inputbox input:valid {
+        background-color: #b9b9f0; /* Couleur de fond lorsque le champ est valide */
+    }
+    .inputbox input::placeholder {
+        font-size: 1.1em; /* Définir la taille du placeholder */
+    }
+
+    .inputbox ion-icon{
+        position: absolute;
+        right: 5px;
+        font-size: 1.2em; 
+    } 
+   
+    .register{
+        font-weight: 400; font-size: 14px;
+        text-align: center;
+        margin-top: 25px ;
+    }
+    .register p a{
+        text-decoration: none;
+       color: #504DC1;
+    }
+    .register p a:hover{
+        text-decoration: underline;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        margin-top: 100px;
+        background-color: #504DC1;
+        height: 40px;
+        color: white;
+        font-weight: 600;  font-size: 12px;
+        
+     }
+
+    /* Styles pour les écrans de petite taille (par exemple, mobile) */
+@media only screen and (max-width: 500px) {
+    header img{
+        height: 180px; }
+     
+        .inputbox{
+            margin: 15px 0px; /*Pour creer margin de 30px en haut et en bas*/
+            width: 240px; }
+
+      form h1{ font-size: 20px;
+    margin-bottom: 20px; }
+
+      .form-box-register{
+        width: 350px;
+        height: 400px;
+        
+    }
+    .form-box{
+        height: 330px;
+        width: 350px;
+
+    }
+    .inputbox input {
+     
+        height: 40px;
+      
+    }
+    .register p{
+      font-size: 12px;
+       
+    }
+    .inputbox input::placeholder {
+        font-size: 12px; /* Définir la taille du placeholder */
+    }
+
+
+    .btn-txt{ 
+        margin-top: 10px;
+        font-size: 12px;
+        height: 30px;
+        }
+
+        footer{
+     
+            padding: 20px;
+            margin-top: 70px;
+            height: 20px;
+            font-size: 8px;
+          }
+}
+

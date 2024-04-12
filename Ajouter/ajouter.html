@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des blocages</title>
+    <link rel="stylesheet" href="styleAjouter.css">
+</head>
+<body>
+    <header>
+        <img src="talent.png" alt="future talent school">
+    </header>
+    <section>
+
+      <div class="affichage">
+        <div class="barre">
+            <h2>Ajouter</h2>
+            <button class="btn-exit"><img src="Exit.png" alt="Exit"></button>
+        </div>
+  
+            <form action="">
+
+                 <div class="div-inline">
+
+               <label for="bootcamp">Bootcamp :</label>
+               <select id="bootcamp" name="bootcamp" >
+                <option value="Choose a bootcamp">Choose a bootcamp</option>
+                <option value="MERN stack">MERN stack</option>
+                <option value="PHP Laravel">PHP Laravel</option>
+              </select>
+
+              </div>
+
+              <div class="div-inline">
+                <label for="formateur">Formateur :</label>
+                <select id="formateur" name="formateur">
+                  <!-- Options dynamiquement mises à jour par JavaScript -->
+                </select>
+              </div>
+           
+                <div class="div-inline">
+                    <label for=" titre">Titre</label>
+                    <input type="text" id="titre" name="titre">
+                </div>
+                <div class="div-inline">
+                    <label for="brief">Brief</label>
+                    <input type="text" id="brief" name="brief">
+                </div>
+                <div class="div-inline-ex">
+                    <label for=" difficulte">Difficulté<br>rencontrée</label>
+                    <textarea id="difficulte" name="difficulte" rows="4"></textarea> 
+                </div>
+                <div class="btn-flex">
+                    <input class ="btn-txt" type="submit" value="Ajouter">
+                </div>
+            </form>
+      
+    </div>
+    </section>
+ 
+
+    <footer>
+      <h4>@Copyright 2024 - Future Talents School</h4>
+  </footer>
+    <script src="scriptajouter.js"></script>
+</body>
+</html>
